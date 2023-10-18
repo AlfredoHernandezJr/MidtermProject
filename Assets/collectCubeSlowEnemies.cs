@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
-public class collectCub : MonoBehaviour
+public class collectCubSlowEnemies : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
     public GameObject canva;
@@ -25,7 +25,7 @@ public class collectCub : MonoBehaviour
     {
         //Debug.Log(other);
         score = Random.Range(1, 5);
-        scoreText.text = "Score: " + canva.GetComponent<canvasScriptSlowEnemies>().changeScore(score).ToString();
+        scoreText.text = "Score: " + canva.GetComponent<canvasScript>().changeScore(score).ToString();
         Destroy(this.gameObject);
     }
 }
