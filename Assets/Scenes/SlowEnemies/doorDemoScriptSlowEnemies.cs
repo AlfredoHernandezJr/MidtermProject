@@ -9,6 +9,7 @@ public class doorDemoScriptSlowEnemies : MonoBehaviour
     private Vector3 frontDoorOneStartPosition, frontDoorTwoStartPosition, exitDoorOneStartPosition, exitDoorTwoStartPosition;
     public UnityEvent onDoorOpen;
     bool win = false;
+    bool opened = false;
 
     // Add this line to define an AudioSource variable
     public AudioSource audioSource;
@@ -78,21 +79,25 @@ public class doorDemoScriptSlowEnemies : MonoBehaviour
 
     public void openFrontDoor()
     {
-        Debug.Log("Front DoorOpen");
-        // Move frontDoorOne to the left
-        StartCoroutine(MoveDoor(frontDoorTwo, Vector3.back * 20f, 10f));
+        if (!opened)
+        {
+            Debug.Log("Front DoorOpen");
+            // Move frontDoorOne to the left
+            StartCoroutine(MoveDoor(frontDoorTwo, Vector3.back * 15f, 10f));
 
-        // Move frontDoorTwo to the right
-        StartCoroutine(MoveDoor(frontDoorOne, Vector3.forward * 20f, 10f));
+            // Move frontDoorTwo to the right
+            StartCoroutine(MoveDoor(frontDoorOne, Vector3.forward * 15f, 10f));
 
-        // Invoke the UnityEngine onDoorOpen event
-        onDoorOpen.Invoke();
+            // Invoke the UnityEngine onDoorOpen event
+            onDoorOpen.Invoke();
 
 
-        if (audioSource != null)
-            audioSource.Play();
-        Debug.Log("Music Started!");
-        Debug.Log("Collectables Added!");
+            if (audioSource != null)
+                audioSource.Play();
+            Debug.Log("Music Started!");
+            Debug.Log("Collectables Added!");
+            opened = true;
+        }
     }
 
     private IEnumerator MoveDoor(GameObject door, Vector3 direction, float speed)
