@@ -1031,6 +1031,9 @@ PrefabInstance:
       addedObject: {fileID: 1319686789}
     - targetCorrespondingSourceObject: {fileID: 7900178844424009705, guid: 05e15074f712c4134b666d3ad4fb5359, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1944971187}
+    - targetCorrespondingSourceObject: {fileID: 7900178844424009705, guid: 05e15074f712c4134b666d3ad4fb5359, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 715076287}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3487410410079392752, guid: 05e15074f712c4134b666d3ad4fb5359, type: 3}
@@ -2158,6 +2161,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782337308}
   m_CullTransparentMesh: 1
+--- !u!1 &1944971186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1944971187}
+  - component: {fileID: 1944971189}
+  - component: {fileID: 1944971188}
+  m_Layer: 0
+  m_Name: exitSlowEnemiesTrig
+  m_TagString: exitOpen
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1944971187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944971186}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 2.45, z: 16.59}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 692221214}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1944971188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944971186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 552be3c5aa150461db21267d628bd29e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1944971189
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944971186}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15, y: 6.91, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2132405602
 GameObject:
   m_ObjectHideFlags: 0
