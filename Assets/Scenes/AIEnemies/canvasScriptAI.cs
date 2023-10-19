@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class canvasScript : MonoBehaviour
+public class canvasScriptAI : MonoBehaviour
 {
     public int enemyCount = 3;
     public int score = 0;
@@ -46,7 +46,7 @@ public class canvasScript : MonoBehaviour
         scoreText.gameObject.SetActive(false);
         miniMap.SetActive(false);
         winText.gameObject.SetActive(true);
-        doorTrig.gameObject.GetComponent<doorDemoScript>().setWin();
+        doorTrig.gameObject.GetComponent<doorDemoScriptAI>().setWin();
     }
 
     public int changeScore(int inp)
