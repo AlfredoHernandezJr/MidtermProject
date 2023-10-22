@@ -1216,6 +1216,9 @@ MonoBehaviour:
   collectFound:
     m_PersistentCalls:
       m_Calls: []
+  loseEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &728384704
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2866,6 +2869,7 @@ MonoBehaviour:
   winText: {fileID: 1735737391}
   miniMap: {fileID: 1617966459}
   ExitdoorTrig: {fileID: 692221212}
+  eventObj: {fileID: 720939060}
 --- !u!1 &1595011457
 GameObject:
   m_ObjectHideFlags: 0

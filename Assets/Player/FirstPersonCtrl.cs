@@ -75,7 +75,12 @@ public class FirstPersonCtrl : MonoBehaviour
         if (other.gameObject.tag == "enemy")
         {
             Debug.Log("U Lose!");
-            goldObj.GetComponent<canvasScript>().youLose();
+            if(Application.loadedLevelName == "sceneCollectablesOnly")
+                goldObj.GetComponent<canvasScript>().youLose();
+            else if (Application.loadedLevelName == "sceneSlowEnemies")
+                goldObj.GetComponent<canvasScriptSlowEnemies>().youLose();
+            else if (Application.loadedLevelName == "sceneAIEnemies")
+                goldObj.GetComponent<canvasScriptAI>().youLose();
         }
     }
 
