@@ -1723,6 +1723,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: enterdoorright
       objectReference: {fileID: 0}
+    - target: {fileID: 2330648577601732564, guid: 05e15074f712c4134b666d3ad4fb5359, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2330648577601732564, guid: 05e15074f712c4134b666d3ad4fb5359, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.34
+      objectReference: {fileID: 0}
     - target: {fileID: 2351075031067753704, guid: 05e15074f712c4134b666d3ad4fb5359, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.59
@@ -1814,6 +1822,14 @@ PrefabInstance:
     - target: {fileID: 8217407404968855327, guid: 05e15074f712c4134b666d3ad4fb5359, type: 3}
       propertyPath: m_Name
       value: exitdoorright
+      objectReference: {fileID: 0}
+    - target: {fileID: 9154834866749157204, guid: 05e15074f712c4134b666d3ad4fb5359, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 9154834866749157204, guid: 05e15074f712c4134b666d3ad4fb5359, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.06
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2870,6 +2886,8 @@ MonoBehaviour:
   miniMap: {fileID: 1617966459}
   ExitdoorTrig: {fileID: 692221212}
   eventObj: {fileID: 720939060}
+  buttonWidth: 0
+  buttonHeight: 0
 --- !u!1 &1595011457
 GameObject:
   m_ObjectHideFlags: 0

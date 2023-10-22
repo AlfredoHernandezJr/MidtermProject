@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class doorDemoScriptAI : MonoBehaviour
 {
-    public GameObject frontDoorOne, frontDoorTwo, exitDoorOne, exitDoorTwo;
+    public GameObject frontDoorOne, frontDoorTwo, exitDoorOne, exitDoorTwo, eventObj;
     private Vector3 frontDoorOneStartPosition, frontDoorTwoStartPosition, exitDoorOneStartPosition, exitDoorTwoStartPosition;
     public UnityEvent onDoorOpen;
     bool win = false;
@@ -92,10 +92,8 @@ public class doorDemoScriptAI : MonoBehaviour
             onDoorOpen.Invoke();
 
 
-            if (audioSource != null)
-                audioSource.Play();
-            Debug.Log("Music Started!");
-            Debug.Log("Collectables Added!");
+            //call event
+            eventObj.GetComponent<eventScriptAI>().doorOpenActivationFunc();
             opened = true;
         }
     }
