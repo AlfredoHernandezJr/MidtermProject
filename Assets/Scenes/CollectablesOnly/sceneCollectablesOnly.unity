@@ -515,10 +515,21 @@ MonoBehaviour:
   frontDoorTwo: {fileID: 1307240574}
   exitDoorOne: {fileID: 788927642}
   exitDoorTwo: {fileID: 386312873}
-  onDoorOpen:
+  doorOpenCollectableEvent:
     m_PersistentCalls:
-      m_Calls: []
-  audioSource: {fileID: 728384712}
+      m_Calls:
+      - m_Target: {fileID: 1166164039}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &692221214 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7900178844424009705, guid: 05e15074f712c4134b666d3ad4fb5359, type: 3}
@@ -785,11 +796,6 @@ MonoBehaviour:
 --- !u!4 &728384711 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4965941102541714, guid: 0a6b5a6432d634592b0c47004fecf566, type: 3}
-  m_PrefabInstance: {fileID: 728384704}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &728384712 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 82100160642753078, guid: 0a6b5a6432d634592b0c47004fecf566, type: 3}
   m_PrefabInstance: {fileID: 728384704}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &788927642 stripped

@@ -563,8 +563,8 @@ GameObject:
   - component: {fileID: 294514581}
   - component: {fileID: 294514580}
   - component: {fileID: 294514579}
+  - component: {fileID: 294514582}
   - component: {fileID: 294514578}
-  - component: {fileID: 294514577}
   m_Layer: 0
   m_Name: collectCube
   m_TagString: Untagged
@@ -572,21 +572,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &294514577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 294514576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f464e5b7d3c784183bbc84ef406bd3e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 500633836}
-  canva: {fileID: 1467818235}
-  score: 0
 --- !u!65 &294514578
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -673,6 +658,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &294514582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294514576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afd3013b466ff459ba98f029ab52bce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 500633836}
+  canva: {fileID: 1467818235}
+  score: 0
 --- !u!1 &372745101 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1796863380182580, guid: 7148764af45b34ab6b5f05703c0518ac, type: 3}
@@ -2412,8 +2412,8 @@ GameObject:
   - component: {fileID: 1346089955}
   - component: {fileID: 1346089954}
   - component: {fileID: 1346089953}
+  - component: {fileID: 1346089956}
   - component: {fileID: 1346089952}
-  - component: {fileID: 1346089951}
   m_Layer: 0
   m_Name: collectCube (5)
   m_TagString: Untagged
@@ -2421,21 +2421,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1346089951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1346089950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f464e5b7d3c784183bbc84ef406bd3e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 500633836}
-  canva: {fileID: 1467818235}
-  score: 0
 --- !u!65 &1346089952
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2522,6 +2507,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1346089956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346089950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afd3013b466ff459ba98f029ab52bce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 500633836}
+  canva: {fileID: 1467818235}
+  score: 0
 --- !u!1 &1414703919
 GameObject:
   m_ObjectHideFlags: 0
@@ -2958,8 +2958,8 @@ GameObject:
   - component: {fileID: 1699219306}
   - component: {fileID: 1699219305}
   - component: {fileID: 1699219304}
+  - component: {fileID: 1699219307}
   - component: {fileID: 1699219303}
-  - component: {fileID: 1699219302}
   m_Layer: 0
   m_Name: collectCube (4)
   m_TagString: Untagged
@@ -2967,21 +2967,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1699219302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1699219301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f464e5b7d3c784183bbc84ef406bd3e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 500633836}
-  canva: {fileID: 1467818235}
-  score: 0
 --- !u!65 &1699219303
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3068,6 +3053,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1699219307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699219301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afd3013b466ff459ba98f029ab52bce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 500633836}
+  canva: {fileID: 1467818235}
+  score: 0
 --- !u!1 &1735737389
 GameObject:
   m_ObjectHideFlags: 0

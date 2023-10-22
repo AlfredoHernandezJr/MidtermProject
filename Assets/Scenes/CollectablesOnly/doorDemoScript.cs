@@ -7,12 +7,9 @@ public class doorDemoScript : MonoBehaviour
 {
     public GameObject frontDoorOne, frontDoorTwo, exitDoorOne, exitDoorTwo;
     private Vector3 frontDoorOneStartPosition, frontDoorTwoStartPosition, exitDoorOneStartPosition, exitDoorTwoStartPosition;
-    public UnityEvent onDoorOpen;
+    public UnityEvent<doorOpenScript> doorOpenCollectableEvent;
     bool win = false;
     bool opened = false;
-
-    // Add this line to define an AudioSource variable
-    public AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -89,13 +86,7 @@ public class doorDemoScript : MonoBehaviour
             StartCoroutine(MoveDoor(frontDoorOne, Vector3.forward * 15f, 10f));
 
             // Invoke the UnityEngine onDoorOpen event
-            onDoorOpen.Invoke();
-
-
-            if (audioSource != null)
-                audioSource.Play();
-            Debug.Log("Music Started!");
-            Debug.Log("Collectables Added!");
+            //doorOpenCollectableEvent.Invoke();
             opened = true;
         }
     }
