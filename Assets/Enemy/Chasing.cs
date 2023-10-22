@@ -39,7 +39,7 @@ public class Chasing : MonoBehaviour {
 		if(col.gameObject.tag == "Bullet") {
 			health -= 10;
 			if(health < 1) {
-				canva.GetComponent<canvasScript>().badguyDown();
+				canva.GetComponent<canvasScriptSlowEnemies>().badguyDown();
 				Destroy(this);
 				Instantiate(explostion, transform.position, transform.rotation);
 				Destroy(gameObject);

@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
-public class collectCub : MonoBehaviour
+public class collectCubSlowEnemies : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
     public GameObject canva;

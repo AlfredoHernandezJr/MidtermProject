@@ -5,7 +5,7 @@ using UnityEngine;
 public class Menu2 : MonoBehaviour {
 
 	void OnGUI() {
-		if(GUI.Button(new Rect(20, 20, 100, 50), "Menu")) {
+		if(GUI.Button(new Rect(175, 10, 100, 50), "Menu")) {
 			Application.LoadLevel(0);
 		}
 	}
