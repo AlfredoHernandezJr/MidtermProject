@@ -19,6 +19,6 @@ public class exitDoorScript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
-            GetComponentInParent<doorDemoScriptSlowEnemies>().openExitDoor();
+            GetComponentInParent<doorDemoScript>().openExitDoor();
     }
 }
