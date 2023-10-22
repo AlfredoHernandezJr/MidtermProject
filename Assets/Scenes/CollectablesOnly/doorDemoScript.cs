@@ -5,9 +5,8 @@ using UnityEngine.Events;
 
 public class doorDemoScript : MonoBehaviour
 {
-    public GameObject frontDoorOne, frontDoorTwo, exitDoorOne, exitDoorTwo;
+    public GameObject frontDoorOne, frontDoorTwo, exitDoorOne, exitDoorTwo, eventObj;
     private Vector3 frontDoorOneStartPosition, frontDoorTwoStartPosition, exitDoorOneStartPosition, exitDoorTwoStartPosition;
-    public UnityEvent<doorOpenScript> doorOpenCollectableEvent;
     bool win = false;
     bool opened = false;
 
@@ -85,8 +84,9 @@ public class doorDemoScript : MonoBehaviour
             // Move frontDoorTwo to the right
             StartCoroutine(MoveDoor(frontDoorOne, Vector3.forward * 15f, 10f));
 
-            // Invoke the UnityEngine onDoorOpen event
-            //doorOpenCollectableEvent.Invoke();
+            //call event
+            eventObj.GetComponent<eventScriptCollect>().doorOpenActivationFunc();
+
             opened = true;
         }
     }
