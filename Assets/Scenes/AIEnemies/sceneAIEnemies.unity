@@ -2789,7 +2789,7 @@ MonoBehaviour:
   collectText: {fileID: 832128315}
   winText: {fileID: 1735737391}
   miniMap: {fileID: 1617966459}
-  ExitdoorTrig: {fileID: 1319686788}
+  ExitdoorTrig: {fileID: 692221212}
   eventObj: {fileID: 720939060}
   buttonWidth: 0
   buttonHeight: 0
