@@ -7,7 +7,7 @@ using UnityEngine.SocialPlatforms.Impl;
 public class collectCubSlowEnemies : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
-    public GameObject canva;
+    public GameObject canva, eventObj;
     public int score = 0;
     // Start is called before the first frame update
     void Start()
@@ -26,6 +26,8 @@ public class collectCubSlowEnemies : MonoBehaviour
         //Debug.Log(other);
         score = Random.Range(1, 5);
         scoreText.text = "Score: " + canva.GetComponent<canvasScriptSlowEnemies>().changeScore(score).ToString();
+        //call event
+        eventObj.GetComponent<eventScriptSlowEnemies>().collectFoundFunc();
         Destroy(this.gameObject);
     }
 }

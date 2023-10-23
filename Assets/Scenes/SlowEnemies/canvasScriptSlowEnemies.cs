@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using static UnityEngine.UI.Image;
 
 public class canvasScriptSlowEnemies : MonoBehaviour
 {
@@ -9,13 +10,22 @@ public class canvasScriptSlowEnemies : MonoBehaviour
     public int score = 0;
     private int collectCount = 0;
     public TextMeshProUGUI enemyText, scoreText, lostText, collectText, winText;
-    public GameObject miniMap , ExitdoorTrig;
+    public GameObject miniMap , ExitdoorTrig, eventObj;
+    public int buttonWidth;
+    public int buttonHeight;
+    private int origin_x;
+    private int origin_y;
+    private bool isLost = false;
     // Start is called before the first frame update
     void Start()
     {
         scoreText.text = "Score: " + score.ToString();
         enemyText.text = "Enemies Remaining: " + enemyCount;
         collectText.text = "Collectables found: " + collectCount;
+        buttonWidth = 200;
+        buttonHeight = 50;
+        origin_x = Screen.width / 2 - buttonWidth / 2;
+        origin_y = Screen.height / 2 - buttonHeight * 2;
     }
 
     // Update is called once per frame
@@ -38,14 +48,19 @@ public class canvasScriptSlowEnemies : MonoBehaviour
     {
         enemyText.gameObject.SetActive(false);
         scoreText.gameObject.SetActive(false);
+        collectText.gameObject.SetActive(false);
         miniMap.SetActive(false);
         lostText.gameObject.SetActive(true);
+        isLost = true;
+        //call event
+        eventObj.GetComponent<eventScriptSlowEnemies>().loseEventFunc();
     }
 
     public void youWin()
     {
         enemyText.gameObject.SetActive(false);
         scoreText.gameObject.SetActive(false);
+        collectText.gameObject.SetActive(false);
         miniMap.SetActive(false);
         winText.gameObject.SetActive(true);
         ExitdoorTrig.gameObject.GetComponent<doorDemoScriptSlowEnemies>().setWin();
@@ -59,5 +74,16 @@ public class canvasScriptSlowEnemies : MonoBehaviour
         if (enemyCount == 0 && collectCount == 3)
             youWin();
         return score;
+    }
+
+    void OnGUI()
+    {
+        if (isLost)
+        {
+            if (GUI.Button(new Rect(origin_x, origin_y, buttonWidth, buttonHeight), "Restart?"))
+            {
+                Application.LoadLevel(3);
+            }
+        }
     }
 }
