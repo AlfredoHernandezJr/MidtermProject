@@ -82,7 +82,7 @@ public class canvasScriptAI : MonoBehaviour
         {
             if (GUI.Button(new Rect(origin_x, origin_y, buttonWidth, buttonHeight), "Restart?"))
             {
-                Application.LoadLevel(3);
+                Application.LoadLevel(4);
             }
         }
     }

@@ -82,7 +82,7 @@ public class canvasScriptSlowEnemies : MonoBehaviour
         {
             if (GUI.Button(new Rect(origin_x, origin_y, buttonWidth, buttonHeight), "Restart?"))
             {
-                Application.LoadLevel(2);
+                Application.LoadLevel(3);
             }
         }
     }
