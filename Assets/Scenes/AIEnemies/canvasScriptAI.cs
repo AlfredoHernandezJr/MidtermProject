@@ -16,6 +16,7 @@ public class canvasScriptAI : MonoBehaviour
     private int origin_x;
     private int origin_y;
     private bool isLost = false;
+    private bool manic;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,7 @@ public class canvasScriptAI : MonoBehaviour
         buttonHeight = 50;
         origin_x = Screen.width / 2 - buttonWidth / 2;
         origin_y = Screen.height / 2 - buttonHeight * 2;
+        manic = false;
     }
 
     // Update is called once per frame
@@ -69,11 +71,21 @@ public class canvasScriptAI : MonoBehaviour
     public int changeScore(int inp)
     {
         collectCount++;
+        if (collectCount > 1)
+        {
+            Debug.Log("ENEMIES MANIC!");
+            manic = true;
+        }
         collectText.text = "Collectables found: " + collectCount;
         score += inp;
         if (enemyCount == 0 && collectCount == 3)
             youWin();
         return score;
+    }
+
+    public bool isManic()
+    {
+        return manic;
     }
 
     void OnGUI()

@@ -496,7 +496,7 @@ PrefabInstance:
       addedObject: {fileID: 256164227}
     - targetCorrespondingSourceObject: {fileID: 1796863380182580, guid: 7148764af45b34ab6b5f05703c0518ac, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 256164226}
+      addedObject: {fileID: 256164228}
   m_SourcePrefab: {fileID: 100100000, guid: 7148764af45b34ab6b5f05703c0518ac, type: 3}
 --- !u!1 &256164224 stripped
 GameObject:
@@ -508,22 +508,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4882812477147152, guid: 7148764af45b34ab6b5f05703c0518ac, type: 3}
   m_PrefabInstance: {fileID: 256164223}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &256164226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256164224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e98c4cff8ad44620a1272c3db92e38c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1776342029}
-  speed: 0.1
-  explostion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
-  canva: {fileID: 1467818235}
 --- !u!54 &256164227
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -551,6 +535,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &256164228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256164224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2607ff67bc124d0ca520bf1a449da79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1776342029}
+  speed: 0.1
+  explostion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
+  canva: {fileID: 1467818235}
 --- !u!4 &259531522 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4965941102541714, guid: 0a6b5a6432d634592b0c47004fecf566, type: 3}
@@ -683,22 +683,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1796863380182580, guid: 7148764af45b34ab6b5f05703c0518ac, type: 3}
   m_PrefabInstance: {fileID: 1252491884}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &372745102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372745101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e98c4cff8ad44620a1272c3db92e38c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1776342029}
-  speed: 0.1
-  explostion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
-  canva: {fileID: 1467818235}
 --- !u!54 &372745103
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -731,6 +715,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4882812477147152, guid: 7148764af45b34ab6b5f05703c0518ac, type: 3}
   m_PrefabInstance: {fileID: 1252491884}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &372745108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372745101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2607ff67bc124d0ca520bf1a449da79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1776342029}
+  speed: 0.1
+  explostion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
+  canva: {fileID: 1467818235}
 --- !u!1 &386312873 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8217407404968855327, guid: 05e15074f712c4134b666d3ad4fb5359, type: 3}
@@ -1433,7 +1433,7 @@ PrefabInstance:
       addedObject: {fileID: 743864004}
     - targetCorrespondingSourceObject: {fileID: 1796863380182580, guid: 7148764af45b34ab6b5f05703c0518ac, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 743864003}
+      addedObject: {fileID: 743864005}
   m_SourcePrefab: {fileID: 100100000, guid: 7148764af45b34ab6b5f05703c0518ac, type: 3}
 --- !u!1 &743864001 stripped
 GameObject:
@@ -1445,22 +1445,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4882812477147152, guid: 7148764af45b34ab6b5f05703c0518ac, type: 3}
   m_PrefabInstance: {fileID: 743864000}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &743864003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 743864001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e98c4cff8ad44620a1272c3db92e38c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1776342029}
-  speed: 0.1
-  explostion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
-  canva: {fileID: 1467818235}
 --- !u!54 &743864004
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1488,6 +1472,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &743864005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743864001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2607ff67bc124d0ca520bf1a449da79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1776342029}
+  speed: 0.1
+  explostion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
+  canva: {fileID: 1467818235}
 --- !u!1 &788927642 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6173849041469375920, guid: 05e15074f712c4134b666d3ad4fb5359, type: 3}
@@ -2341,7 +2341,7 @@ PrefabInstance:
       addedObject: {fileID: 372745103}
     - targetCorrespondingSourceObject: {fileID: 1796863380182580, guid: 7148764af45b34ab6b5f05703c0518ac, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 372745102}
+      addedObject: {fileID: 372745108}
   m_SourcePrefab: {fileID: 100100000, guid: 7148764af45b34ab6b5f05703c0518ac, type: 3}
 --- !u!1 &1304005317
 GameObject:
@@ -2486,7 +2486,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1319686788}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f32ffd6c24e3488a97f6b1a56820542, type: 3}
+  m_Script: {fileID: 11500000, guid: 424664720156349de9ce19227b198919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1346089950
@@ -3839,6 +3839,10 @@ PrefabInstance:
     - target: {fileID: 1754014328869225669, guid: e8bbbff5195f87a45a4f45c2931fc300, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812944681993599481, guid: e8bbbff5195f87a45a4f45c2931fc300, type: 3}
+      propertyPath: speed
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3812944681993599481, guid: e8bbbff5195f87a45a4f45c2931fc300, type: 3}
       propertyPath: goldObj

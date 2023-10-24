@@ -91,6 +91,7 @@
     <Compile Include="Assets/scoreManager.cs" />
     <Compile Include="Assets/Scenes/CollectablesOnly/exitCloseScript.cs" />
     <Compile Include="Assets/NPC/ScriptableOBj/ChatLines.cs" />
+    <Compile Include="Assets/Scenes/AIEnemies/exitAITrig.cs" />
     <Compile Include="Assets/Scenes/MainMenu/Menu.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs" />
@@ -119,6 +120,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/WarpTextExample.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" />
     <Compile Include="Assets/Scenes/AIEnemies/exitDoorScriptAI.cs" />
+    <Compile Include="Assets/Enemy/ChasingAI.cs" />
     <Compile Include="Assets/NPC/Prefab/DialogControl.cs" />
     <Compile Include="Assets/Scenes/AIEnemies/canvasScriptAI.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" />

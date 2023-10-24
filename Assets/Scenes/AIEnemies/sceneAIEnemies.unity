@@ -977,15 +977,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4882812477147152, guid: 7148764af45b34ab6b5f05703c0518ac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.13
+      value: -29.02
       objectReference: {fileID: 0}
     - target: {fileID: 4882812477147152, guid: 7148764af45b34ab6b5f05703c0518ac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.51
+      value: 10.13
       objectReference: {fileID: 0}
     - target: {fileID: 4882812477147152, guid: 7148764af45b34ab6b5f05703c0518ac, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.87
+      value: -1.18
       objectReference: {fileID: 0}
     - target: {fileID: 4882812477147152, guid: 7148764af45b34ab6b5f05703c0518ac, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1059,6 +1059,10 @@ MonoBehaviour:
   speed: 0.1
   explostion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
   canva: {fileID: 1467818235}
+  moveSpeed: 5
+  detectionDistance: 8
+  player: {fileID: 1776342029}
+  stareDistance: 15
 --- !u!54 &584982440
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1194,6 +1198,10 @@ MonoBehaviour:
   speed: 0.1
   explostion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
   canva: {fileID: 1467818235}
+  moveSpeed: 5
+  detectionDistance: 8
+  player: {fileID: 1776342029}
+  stareDistance: 15
 --- !u!54 &585414115
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1905,6 +1913,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7900178844424009705, guid: 05e15074f712c4134b666d3ad4fb5359, type: 3}
       insertIndex: -1
       addedObject: {fileID: 715076287}
+    - targetCorrespondingSourceObject: {fileID: 7900178844424009705, guid: 05e15074f712c4134b666d3ad4fb5359, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2040744894}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3487410410079392752, guid: 05e15074f712c4134b666d3ad4fb5359, type: 3}
       insertIndex: -1
@@ -3447,6 +3458,10 @@ MonoBehaviour:
   speed: 0.1
   explostion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
   canva: {fileID: 1467818235}
+  moveSpeed: 5
+  detectionDistance: 8
+  player: {fileID: 1776342029}
+  stareDistance: 15
 --- !u!54 &1883861807
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3665,6 +3680,74 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &2040744892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2040744894}
+  - component: {fileID: 2040744893}
+  - component: {fileID: 2040744895}
+  m_Layer: 0
+  m_Name: lowAITrig
+  m_TagString: exitOpen
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &2040744893
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040744892}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15, y: 6.91, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &2040744894
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040744892}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.45, z: 16.590002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 692221214}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2040744895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040744892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 949f36a8b07d949fb845a425953ab0a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonWidth: 0
+  buttonHeight: 0
 --- !u!1 &2132405602
 GameObject:
   m_ObjectHideFlags: 0
@@ -3770,6 +3853,10 @@ PrefabInstance:
     - target: {fileID: 1754014328869225669, guid: e8bbbff5195f87a45a4f45c2931fc300, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812944681993599481, guid: e8bbbff5195f87a45a4f45c2931fc300, type: 3}
+      propertyPath: speed
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3812944681993599481, guid: e8bbbff5195f87a45a4f45c2931fc300, type: 3}
       propertyPath: goldObj
