@@ -16,25 +16,85 @@ public class Chasing : MonoBehaviour {
 	private Text healText;
 	private Image healBar;
 
-	// Use this for initialization
-	void Start () {
+    public float moveSpeed = 5.0f;
+    public float detectionDistance = 10.0f; 
+    public Transform player;
+    public float stareDistance = 5.0f; 
+    private float distanceMoved = 0.0f;
+    private bool isChasing = false;
+    private Vector3 initialPosition;
+
+
+   
+    void Start () {
 		speed = 1f;
 		health = 100.0f;
 		maxHealth = 100.0f;
 		healText = transform.Find("EnemyCanvas").Find("HealthBarText").GetComponent<Text>();
 		healBar = transform.Find("EnemyCanvas").Find("MaxHealthBar").Find("HealthBar").GetComponent<Image>();
 		rbody = GetComponent<Rigidbody>();
-	}
+        initialPosition = transform.position;
+    }
 	
-	// Update is called once per frame
+	
 	void Update () {
-		transform.LookAt(target, Vector3.up);
-		transform.position += transform.forward * speed * Time.deltaTime;
+		
 		healText.text = health.ToString();
 		healBar.fillAmount = health / maxHealth;
-	}
+        float playerDistance = Vector3.Distance(transform.position, player.position);
 
-	void OnCollisionEnter(Collision col) {
+        if (playerDistance <= stareDistance)
+        {
+            Stare();
+            if (playerDistance <= 13.0f)
+            {
+                isChasing = true;
+            }
+            else
+            {
+                isChasing = false;
+                transform.position = initialPosition;
+            }
+        }
+        else
+        {
+            isChasing = false;
+            Patrol();
+        }
+        if (isChasing)
+        {
+            chase();
+        }
+    }
+
+    private void Patrol()
+    {
+        
+        transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+        distanceMoved += moveSpeed * Time.deltaTime;
+
+       
+        if (distanceMoved >= 3.0f)
+        {
+            transform.Rotate(Vector3.up, 180.0f);
+            distanceMoved = 0.0f;
+        }
+    }
+
+    private void Stare()
+    {
+        transform.LookAt(target, Vector3.up);
+
+    }
+
+
+    void chase()
+    {
+        transform.LookAt(target, Vector3.up);
+        transform.position += transform.forward * speed * Time.deltaTime;
+    }
+
+    void OnCollisionEnter(Collision col) {
 		//Debug.Log(col.gameObject.tag);
 		if(col.gameObject.tag == "Bullet") {
 			health -= 10;
